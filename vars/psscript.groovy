@@ -1,4 +1,4 @@
-def runPowerShellScript(String scriptName) {
-    def scriptContents = libraryResource("Powershell/Scripts/${scriptName}")
+def call() {
+    def scriptcontents = libraryResource("Powershell/Scripts/hello.ps1")   
     powershell(script: scriptContents)
 }
