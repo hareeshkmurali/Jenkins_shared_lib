@@ -1,4 +1,3 @@
-def call() {
-    def scriptcontents = libraryResource("Powershell/Scripts/hello.ps1")   
-    powershell(script: scriptContents)
+def call() { 
+    powershell(script: 'Powershell/Scripts/hello.ps1')
 }
