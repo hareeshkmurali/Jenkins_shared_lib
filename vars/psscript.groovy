@@ -1,3 +1,3 @@
 def call() { 
-    powershell(script: 'Powershell/Scripts/hello.ps1')
+    powershell(script: 'resources/Powershell/Scripts/hello.ps1')
 }
