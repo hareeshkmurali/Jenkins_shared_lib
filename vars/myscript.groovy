@@ -1,4 +1,6 @@
-def call(Map scriptParams) {
+// myScript.groovy
+
+def renameFile(Map scriptParams) {
     def oldName = scriptParams.OldName
     def newName = scriptParams.NewName
 
@@ -16,3 +18,5 @@ def call(Map scriptParams) {
     // Handle the script execution result if needed
     // ...
 }
+
+return this
