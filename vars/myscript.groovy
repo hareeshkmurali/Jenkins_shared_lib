@@ -11,7 +11,7 @@ def renameFile(Map scriptParams) {
             \$newName = "${'$'}{newName}"
             
  
-            Get-ChildItem *.txt | Rename-Item -NewName \$newName
+            Rename-Item -Path ${oldName} -NewName ${newName}
         """
 
         // Execute the PowerShell script
