@@ -12,7 +12,7 @@ def renameFile(Map scriptParams) {
             
             // Test-Path -Path \$oldName -NewName \$newName 
             // Rename-Item -Path \$oldName -NewName \$newName
-            Get-ChildItem *.txt | Rename-Item -NewName { $_.Name -replace '.txt','.log' } 
+            Get-ChildItem *.txt | Rename-Item -NewName \$newName
         """
 
         // Execute the PowerShell script
