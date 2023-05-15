@@ -10,6 +10,7 @@ def renameFile(Map scriptParams) {
             \$oldName = "${'$'}{oldName}"
             \$newName = "${'$'}{newName}"
             
+            Test-Path -Path \$oldName -NewName \$newName
             Rename-Item -Path \$oldName -NewName \$newName
         """
 
