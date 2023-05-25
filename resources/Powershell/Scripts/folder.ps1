@@ -1,6 +1,2 @@
-Param(
-    [string]$oldName,
-    [string]$newName
-)
 $ErrorActionPreference = "Stop"
-Rename-Item -Path ${oldName} -NewName ${newName}
+Rename-Item -Path C:\\test\\temp.txt -NewName C:\\test\\new.txt
