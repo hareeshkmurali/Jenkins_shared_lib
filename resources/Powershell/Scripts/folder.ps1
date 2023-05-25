@@ -3,4 +3,4 @@ Param(
     [string]$newName
 )
 $ErrorActionPreference = "Stop"
-Rename-Item -Path $oldName -NewName $newName
+Rename-Item -Path ${oldName} -NewName ${newName}
