@@ -3,4 +3,3 @@ def runPowerShellScript(String oldname, String newname) {
 
     bat "powershell.exe -File ${scriptPath} -oldname '${oldname}' -newname '${newname}'"
 }
-}
