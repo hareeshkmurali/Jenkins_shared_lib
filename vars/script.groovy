@@ -5,7 +5,7 @@ def call(String oldName, String newName) {
     def powershellCommand = "powershell -Command \"${scriptContent}\""
     
     // Pass the parameters as arguments to the PowerShell command
-    def arguments = "-Path '${oldName}' -newName '${newName}'"
+    def arguments = "-oldName '${oldName}' -newName '${newName}'"
     
     // Execute the PowerShell command
     bat("${powershellCommand} ${arguments}")
