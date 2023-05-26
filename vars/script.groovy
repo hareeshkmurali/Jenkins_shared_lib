@@ -8,5 +8,5 @@ def call(String oldName, String newName) {
     def arguments = "-oldName '${oldName}' -newName '${newName}'"
     
     // Execute the PowerShell command
-    bat("${powershellCommand} ${arguments}}\"")
+    bat("${powershellCommand} ${arguments}")
 }
