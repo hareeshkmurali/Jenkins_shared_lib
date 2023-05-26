@@ -5,8 +5,8 @@ def call(Map<String, String> parameters) {
     def powershellCommand = "powershell -Command \"& { ${scriptContent} }\""
     
     // Construct the arguments for the PowerShell command
-    def arguments = parameters.collect { key, value ->
-        "-${key} '${value}'"
+    def arguments = parameters.collect { oldanme, newname ->
+        "-${oldname} '${newname}'"
     }.join(' ')
     
     // Execute the PowerShell command
