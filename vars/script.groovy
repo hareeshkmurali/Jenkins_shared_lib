@@ -1,4 +1,4 @@
-def call(Map scriptParams) {
+def call(Map config = [:]) {
     def oldName = scriptParams.argument1
     def newName = scriptParams.argument2
     def scriptContent = libraryResource('Powershell/Scripts/script.ps1')
