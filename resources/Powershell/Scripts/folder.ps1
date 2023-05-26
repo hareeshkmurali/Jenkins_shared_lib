@@ -1,2 +1,2 @@
 $ErrorActionPreference = "Stop"
-Rename-Item -Path oldnmae -NewName newname
+Rename-Item -Path $oldnmae -NewName $newname
