@@ -1,5 +1,5 @@
 def call(String oldName, String newName) {
-    def scriptContent = libraryResource('script.ps1')
+    def scriptContent = libraryResource('Powershell/Scripts/script.ps1')
     
     // Construct the PowerShell command
     def powershellCommand = "powershell -Command \"& { ${scriptContent} }\""
