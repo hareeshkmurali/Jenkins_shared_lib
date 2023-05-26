@@ -1,4 +1,4 @@
-def call(String oldName, String newName) {
+def call(Map config = [:]) {
     def scriptContent = libraryResource('Powershell/Scripts/script.ps1')
     writeFile file: "new.ps1", text: scriptContent
     // Construct the PowerShell command
