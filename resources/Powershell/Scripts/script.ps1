@@ -1,1 +1,1 @@
-Rename-Item -Path $oldname -NewName $newname
+Rename-Item -Path $oldName -NewName $newName
