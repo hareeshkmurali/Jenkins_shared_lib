@@ -1,4 +1,6 @@
 def call(String oldName, String newName) {
-    def powershellCommand = "powershell -Command \"& { Rename-Item -Path '${oldName}' -NewName '${newName}' }\""
-    bat(powershellCommand)
+    writeFile file: 'tempFile.ps1', text: "${libraryResource 'Powershell/Scripts/script.ps1'}"
+    powershell './tempFile.ps1 -oldName $oldName -newName $newName'
 }
+
+
